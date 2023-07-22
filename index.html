@@ -1,46 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Priya - Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4, 46);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(175, 118, 228);
+            font-size: 1.2rem;
+        }
+        main hr{
+            border: 0;
+        background: rgb(57, 7, 80);
+        height: 1.2px;
+        margin: 60px 84px;
+        }     
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+            margin: 80px 0;
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(156, 85, 222);
+        }
+        .text-gray{
+            color: gray;
+        }
+
+        #element {
+            color: rgb(156, 85, 222);
+            ;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 2rem;
+        }
+         .secondSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+         }
+         .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+         }
+         .vertical-title{
+            position: relative;
+            top: 50px;
+            width: 1px;
+            font-size: 30px;
+         }
+         .vertical-desc{
+            position: relative;
+            top: 150px;
+            color: gray;
+            width: 150px;
+            font-size: 20px;
+         }
+         footer{
+            background-color: #0e0e1a;
+         }
+         .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-between;
+         }
+         .footer ul{
+            list-style: none;
+         }
+         .footer > div{
+            width: 123px;
+         }
+         .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+         }
+    </style>
 </head>
+
 <body>
-    <div class="hero">
+    <header>
         <nav>
-           
-            <img src="../WhatsApp_Image_2023-07-13_at_1.42.42_PM-removebg-preview.png" class="logo">
-            
-            <ul>
-                <li><a href="#name">NAME</a></li>
-                <li><a href="#college">COLLEGE</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">HIRE ME</a></li>
-            </ul>
+            <div class="left">Priya's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+
         </nav>
-        <div class="detel">
-            <h1>I'm Priya <span>Rai</span></h1>
-            <p>This is my official portfolio website to showcase all
-                <br> Details and work experience
-            </p>
-        <a href="#">DOWNLOAD CV</a>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">Priya</span>
+                <div>and I am an IT student and also a </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="images/bg.png" alt="">
+            </div>
+        </section>
+        <hr style="
+        border: 0;
+        background: rgb(57, 7, 80);
+        height: 1.2px;
+        margin: 60px 84px;">
+        <section class="secondSection">
+            <span class="gray">What I have learned so far</span>
+            <h1>Skills</h1>
+            <div class="box">
+            <div class="vertical-title">
+                Programming Languages
+            </div>
+            <div class="vertical-desc">
+                I know Java,C and a little bit of C++ and Python,
+                among which I am most comfortable with Java.
+            </div>
+             <div class="vertical"></div>
+            <div class="vertical-title">
+                Education
+            </div>
+            <div class="vertical-desc">
+                I have completed my Secondary and Higher Secondary from St. Xavier's Institution.
+                And currently I am pursuing my Bachelor's degree in Technology with the subject of interest IT from Narula 
+                Institute of Technology.
+            </div>
+             <div class="vertical"></div>
+            <div class="vertical-title">
+                Languages
+            </div>
+            <div class="vertical-desc">
+                I am proficient in English,Hindi as well as bengali.
+                I am a native Hindi speaker.
+            </div>
+             <div class="vertical"></div>
+            <div class="vertical-title">
+                Interests
+            </div>
+            <div class="vertical-desc">
+                Music is something that brings me peace.I love writing and composing songs.I am very much into fitness and healthy lifestyle.I also love travelling and exploring new places
+                as well as meeting new people.
+            </div>
+        </section> 
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+            <h3>Priya's Developer Portfolio</h3></div>
+            <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+            </div>
+        <div class="footer-rights">
+            www.priyasportfolio.com | All rights reserved
         </div>
-        <div class="images">
-            <img src="../finalshapelast-removebg-preview.png" class="shape">
-            <img src="../WhatsApp_Image_2023-07-13_at_1.08.27_AM-removebg-preview.png" class="girl">
         </div>
-    </div>
-    <div class="hero1">
-    <section id="name">
-        <p> My name is Priya Rai</p>
-
-    </section>
-    <section id="college">
-        <p> I study in Narula Institute of Technology</p>
-
-    </section>
-    </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' Software Developer', 'Frontend Developer', 'Fitness Enthusiast', 'Social Media Manager'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
